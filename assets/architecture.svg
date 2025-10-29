@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340">
+  <style>
+    .box { fill:#ffffff; stroke:#2b6cb0; stroke-width:2; rx:8 }
+    .title { font-family: Arial, Helvetica, sans-serif; font-size:13px; fill:#0b2f5a; font-weight:700 }
+    .arrow { stroke:#4a5568; stroke-width:2; fill:none; marker-end:url(#arrowhead) }
+    .sub { font-family: Arial, Helvetica, sans-serif; font-size:12px; fill:#333 }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#4a5568" />
+    </marker>
+  </defs>
+
+  <!-- Data sources -->
+  <g transform="translate(20,30)">
+    <rect class="box" width="180" height="80"/>
+    <text class="title" x="10" y="26">Data Sources</text>
+    <text class="sub" x="10" y="46">CSV, POS exports, APIs</text>
+    <text class="sub" x="10" y="62">IoT / Sensors (optional)</text>
+  </g>
+
+  <!-- Ingestion -->
+  <g transform="translate(240,30)">
+    <rect class="box" width="200" height="80"/>
+    <text class="title" x="10" y="26">Ingestion & Storage</text>
+    <text class="sub" x="10" y="46">Staging CSV / SQL / Parquet</text>
+    <text class="sub" x="10" y="62">Data lake or local files</text>
+  </g>
+
+  <!-- Processing -->
+  <g transform="translate(480,30)">
+    <rect class="box" width="220" height="80"/>
+    <text class="title" x="10" y="26">Processing & EDA</text>
+    <text class="sub" x="10" y="46">Pandas, NumPy, cleaning</text>
+    <text class="sub" x="10" y="62">Feature engineering</text>
+  </g>
+
+  <!-- Modeling / Notebooks -->
+  <g transform="translate(240,150)">
+    <rect class="box" width="220" height="80"/>
+    <text class="title" x="10" y="26">Notebooks & Analysis</text>
+    <text class="sub" x="10" y="46">Jupyter / IPython</text>
+    <text class="sub" x="10" y="62">Exploration, Visualization</text>
+  </g>
+
+  <!-- Visualization -->
+  <g transform="translate(520,150)">
+    <rect class="box" width="200" height="80"/>
+    <text class="title" x="10" y="26">Visualization</text>
+    <text class="sub" x="10" y="46">Matplotlib, Seaborn, Power BI</text>
+    <text class="sub" x="10" y="62">Dashboards & reports</text>
+  </g>
+
+  <!-- Arrows -->
+  <path class="arrow" d="M200 70 L240 70"/>
+  <path class="arrow" d="M440 70 L480 70"/>
+  <path class="arrow" d="M350 110 L350 150"/>
+  <path class="arrow" d="M460 190 L520 190"/>
+
+  <!-- Insights -->
+  <g transform="translate(760,120)">
+    <rect class="box" width="160" height="100"/>
+    <text class="title" x="10" y="30">Insights & Actions</text>
+    <text class="sub" x="10" y="50">Sales trends, KPIs</text>
+    <text class="sub" x="10" y="68">Business decisions</text>
+  </g>
+
+  <!-- small footer -->
+  <text class="sub" x="12" y="330">Architecture: simplified data flow for Retail Sales Analytics</text>
+</svg>

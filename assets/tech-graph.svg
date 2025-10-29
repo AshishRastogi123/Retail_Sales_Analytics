@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <style>
+    .node { fill:#0b6efd; stroke:#083d9e; stroke-width:2px; }
+    .label { font-family: Arial, Helvetica, sans-serif; font-size:14px; fill:#fff; font-weight:700 }
+    .sub { font-size:12px; fill:#222 }
+    .edge { stroke:#999; stroke-width:2px; }
+  </style>
+
+  <!-- Central node -->
+  <g transform="translate(450,150)">
+    <circle class="node" r="60"/>
+    <text class="label" text-anchor="middle" dy="6">Retail Sales</text>
+  </g>
+
+  <!-- Surrounding tech nodes -->
+  <g transform="translate(160,60)">
+    <circle r="36" fill="#6f42c1" stroke="#512a9e" stroke-width="2"/>
+    <text class="label" text-anchor="middle" dy="6">Python</text>
+  </g>
+
+  <g transform="translate(300,40)">
+    <circle r="30" fill="#17a2b8" stroke="#0f6f76" stroke-width="2"/>
+    <text class="label" text-anchor="middle" dy="6">Pandas</text>
+  </g>
+
+  <g transform="translate(620,60)">
+    <circle r="36" fill="#f39c12" stroke="#a96d00" stroke-width="2"/>
+    <text class="label" text-anchor="middle" dy="6">Power BI</text>
+  </g>
+
+  <g transform="translate(740,160)">
+    <circle r="28" fill="#28a745" stroke="#1f7a33" stroke-width="2"/>
+    <text class="label" text-anchor="middle" dy="6">SQL</text>
+  </g>
+
+  <g transform="translate(300,240)">
+    <circle r="30" fill="#e83e8c" stroke="#9b1f52" stroke-width="2"/>
+    <text class="label" text-anchor="middle" dy="6">Matplotlib</text>
+  </g>
+
+  <g transform="translate(160,240)">
+    <circle r="28" fill="#20c997" stroke="#148b67" stroke-width="2"/>
+    <text class="label" text-anchor="middle" dy="6">NumPy</text>
+  </g>
+
+  <g transform="translate(620,240)">
+    <circle r="30" fill="#6610f2" stroke="#3b05a6" stroke-width="2"/>
+    <text class="label" text-anchor="middle" dy="6">Jupyter</text>
+  </g>
+
+  <!-- Edges -->
+  <line class="edge" x1="160" y1="60" x2="450" y2="150"/>
+  <line class="edge" x1="300" y1="40" x2="450" y2="150"/>
+  <line class="edge" x1="620" y1="60" x2="450" y2="150"/>
+  <line class="edge" x1="740" y1="160" x2="450" y2="150"/>
+  <line class="edge" x1="300" y1="240" x2="450" y2="150"/>
+  <line class="edge" x1="160" y1="240" x2="450" y2="150"/>
+  <line class="edge" x1="620" y1="240" x2="450" y2="150"/>
+
+  <!-- Legend -->
+  <g transform="translate(10,10)">
+    <rect x="0" y="0" width="200" height="60" rx="6" fill="#f8f9fa" stroke="#ddd"/>
+    <text x="12" y="22" class="sub">Technology graph: core tools used in this project</text>
+  </g>
+</svg>
